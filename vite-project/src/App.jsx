@@ -7,6 +7,7 @@ import CreateStudent from './pages/createStudent';
 import CreateTeacher from './pages/createTeacher';
 import ViewStudents from './pages/ViewStudents';
 import ViewTeachers from './pages/ViewTeachers';
+import AllData from './pages/AllData';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Route path="/create-teacher" element={<CreateTeacher />} />
       <Route path="/view-students" element={<ViewStudents />} />
       <Route path="/view-teachers" element={<ViewTeachers />} />
+      <Route path="/all-data" element={<AllData />} />
     </Routes>
   )
 }

@@ -37,66 +37,68 @@ export default function CreateTeacher() {
   };
 
   return (
-    <div className="form-container">
-      <h2>Create New Teacher</h2>
-      <form onSubmit={handleSubmit} className="create-form">
-        <div className="form-group">
-          <label>Name:</label>
-          <input
-            type="text"
-            value={formData.name}
-            onChange={(e) => setFormData({...formData, name: e.target.value})}
-            required
-          />
-        </div>
+    <div className="container-center">
+      <div className="form-container">
+        <h2>Add New Supplier</h2>
+        <form onSubmit={handleSubmit} className="create-form">
+          <div className="form-group">
+            <label>Name:</label>
+            <input
+              type="text"
+              value={formData.name}
+              onChange={(e) => setFormData({...formData, name: e.target.value})}
+              required
+            />
+          </div>
 
-        <div className="form-group">
-          <label>Email:</label>
-          <input
-            type="email"
-            value={formData.email}
-            onChange={(e) => setFormData({...formData, email: e.target.value})}
-            required
-          />
-        </div>
+          <div className="form-group">
+            <label>Email:</label>
+            <input
+              type="email"
+              value={formData.email}
+              onChange={(e) => setFormData({...formData, email: e.target.value})}
+              required
+            />
+          </div>
 
-        <div className="form-group">
-          <label>Department:</label>
-          <select
-            value={formData.department}
-            onChange={(e) => setFormData({...formData, department: e.target.value})}
-            required
-          >
-            <option value="">Select Department</option>
-            <option value="ECE">Electronics & Comm.</option>
-            <option value="CSE">Computer Science</option>
-            <option value="MECH">Mechanical Engg.</option>
-            <option value="GEO">Geography</option>
-          </select>
-        </div>
+          <div className="form-group">
+            <label>Department:</label>
+            <select
+              value={formData.department}
+              onChange={(e) => setFormData({...formData, department: e.target.value})}
+              required
+            >
+              <option value="">Select Department</option>
+              <option value="ECE">Pipes</option>
+              <option value="CSE">Steel</option>
+              <option value="MECH">Motors</option>
+              <option value="GEO">Logistics</option>
+            </select>
+          </div>
 
-        <div className="form-group">
-          <label>Employee ID:</label>
-          <input
-            type="text"
-            value={formData.employeeId}
-            onChange={(e) => setFormData({...formData, employeeId: e.target.value})}
-            required
-          />
-        </div>
+          <div className="form-group">
+            <label>Supplier ID:</label>
+            <input
+              type="text"
+              value={formData.employeeId}
+              onChange={(e) => setFormData({...formData, employeeId: e.target.value})}
+              required
+            />
+          </div>
 
-        <div className="form-group">
-          <label>Phone Number:</label>
-          <input
-            type="tel"
-            value={formData.phoneNumber}
-            onChange={(e) => setFormData({...formData, phoneNumber: e.target.value})}
-            required
-          />
-        </div>
+          <div className="form-group">
+            <label>Phone Number:</label>
+            <input
+              type="tel"
+              value={formData.phoneNumber}
+              onChange={(e) => setFormData({...formData, phoneNumber: e.target.value})}
+              required
+            />
+          </div>
 
-        <button type="submit" className="submit-btn">Create Teacher</button>
-      </form>
+          <button type="submit" className="submit-btn">Add Supplier</button>
+        </form>
+      </div>
     </div>
   );
 }
